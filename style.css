@@ -1,11 +1,15 @@
 /* Reset some default styles */
-body, p, h1, h2, h3, ul, li {
+body, p, h2, h3, ul, li {
     margin: 0;
     padding: 0;
+}
+p, h1, h2, h3 {
+    padding-left: 1vw;
 }
 
 body {
     font-family: Arial, sans-serif;
+    background-image: radial-gradient(rgb(220, 196, 235), rgba(159, 199, 216, 0.852)) ;
 }
 
 /* Style the header */
@@ -18,28 +22,39 @@ header {
 
 /* Style the navigation */
 nav {
-    background-color: #444;
-    padding: 0.5rem;
-    text-align: center;
+    height: 3.5vmax;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(57, 66, 94, 0.493);
+    position: sticky;
+    top: 0;
+    background-color: rgb(50, 48, 48);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
 }
 p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 2vw;
+    font-size: 1.5vw;
 }
 a{
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 0 10px;
     font-weight: bold;
+    font-size: x-large;
+   
 }
 
 nav a:hover{
-    color: rgb(118, 187, 190);
+    color: red;
+    border-bottom: 2px solid red;
 }
 
 h2{
@@ -52,12 +67,14 @@ h2{
     float: right;
     padding-right: 2vh;
     margin-top: 0;
+    filter: drop-shadow(0 0 10px black);
 }
 #certificate{
     height: 35vh;
     float: right;
     padding-right: 2vh;
-    margin-top:-2vh ;
+    margin-top: 0 ;
+    filter: drop-shadow(0 0 10px black);
 }
 div{
     margin-top: 3vh;
@@ -104,5 +121,4 @@ footer{
         margin: 10px 0;
     }
 }
-
 
